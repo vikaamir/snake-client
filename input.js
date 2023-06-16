@@ -36,6 +36,16 @@ const handleUserInput = function () {
       connection.write("Move: down")
     }
   });
+  stdin.on("data", (key) => {
+    if (key === "o") {
+      connection.write("Say: Haha!")
+    }
+  });
+  stdin.on("data", (key) => {
+    if (key === "p") {
+      connection.write("Say: ><")
+    }
+  });
 }
 // Call the setupInput function
 const stdin = setupInput();
