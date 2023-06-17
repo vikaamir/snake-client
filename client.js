@@ -1,5 +1,8 @@
 const net = require("net");
 const { IP, PORT } = require("./constants");
+// creat connection with net to contact with the server 
+// creat connect ver with IP and port num to contect with the server 
+//send data to the server with conn.on and passing the messege 
 
 const connect = () => {
   const conn = net.createConnection({
